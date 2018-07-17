@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/drawer_group_main_items"
+        android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/drawer_home"
+            android:checked="true"
+            android:icon="@drawable/ic_person_24dp"
+            android:title="@string/my_profile" />
+
+        <item
+            android:id="@+id/drawer_students_list"
+            android:checked="true"
+            android:visible="false"
+            android:icon="@drawable/ic_students_list_badge_24dp"
+            android:title="@string/stuff" />
+
+        <item
+            android:id="@+id/drawer_ovt"
+            android:checked="true"
+            android:icon="@drawable/ic_favorite_border_white_24dp"
+            android:title="@string/OVT" />
+
+        <item
+            android:id="@+id/drawer_logout"
+            android:checked="true"
+            android:icon="@drawable/ic_exit_to_app_badge_24dp"
+            android:title="@string/Exit" />
+    </group>
+</menu>

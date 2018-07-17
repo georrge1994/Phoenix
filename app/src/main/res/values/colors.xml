@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FFB300</color>
+
+    <color name="buttonColor">#8f4da4</color>
+    <color name="statusBar">#3c3b3b</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="textColor">#222222</color>
+    <color name="yellow">#FFB300</color>
+    <color name="grey">#f7f7f7</color>
+    <color name="book_grey">#c1c0ba</color>
+    <color name="button_pressed">#6699dd</color>
+    <color name="disableColor">#c0c0c0</color>
+    <color name="green">#0da11f</color>
+    <color name="red">#a10d0d</color>
+    <color name="transparent">#00000000</color>
+    <color name="blue">#92b0ff</color>
+
+
+    <color name="letterBackground0">#3165f3</color>
+    <color name="letterBackground1">#0d41cf</color>
+    <color name="letterBackground2">#3057c1</color>
+    <color name="letterBackground3">#23449d</color>
+    <color name="letterBackground4">#0e2c7f</color>
+</resources>

@@ -1,0 +1,117 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.25.4'
+    }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'io.fabric'
+apply plugin: 'kotlin-kapt'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+repositories {
+    maven {
+        url "https://jitpack.io"
+    }
+}
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.phoenix.kspt"
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 8
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildTypes {
+        debug {
+
+        }
+        release {
+//            debuggable false
+//            shrinkResources true
+//            minifyEnabled true
+//            useProguard true
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'),
+//                    'proguard-rules.pro'
+        }
+    }
+
+
+    flavorDimensions 'build'
+    productFlavors {
+        real {
+            applicationId = "com.phoenix.kspt"
+            ext {
+                redirectUrl = "com.phoenix.kspt"
+            }
+            dimension 'build'
+        }
+        develop {
+            applicationId = "com.phoenix.kspt.develop"
+            ext {
+                redirectUrl = "com.phoenix.kspt.develop"
+            }
+            dimension 'build'
+        }
+    }
+//    vectorDrawables.useSupportLibrary = true
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+
+    // support libs
+    def supportLibVersion = '27.1.1'
+    implementation "com.android.support:support-v4:$supportLibVersion"
+    implementation "com.android.support:appcompat-v7:$supportLibVersion"
+    implementation "com.android.support:design:$supportLibVersion"
+    implementation "com.android.support:recyclerview-v7:$supportLibVersion"
+    implementation "com.android.support:cardview-v7:$supportLibVersion"
+    implementation 'com.android.support:multidex:1.0.3'
+
+    implementation "com.google.firebase:firebase-core:16.0.1"
+    implementation "com.google.firebase:firebase-auth:16.0.2"
+    implementation "com.google.firebase:firebase-storage:16.0.1"
+    implementation "com.google.firebase:firebase-database:16.0.1"
+    implementation "com.google.firebase:firebase-messaging:17.0.0"
+    implementation "com.google.firebase:firebase-config:16.0.0"
+    implementation 'com.google.android.gms:play-services-location:15.0.1'
+    implementation 'com.google.android.gms:play-services-places:15.0.1'
+    implementation 'com.kelvinapps:rxfirebase:0.0.16'
+    implementation 'com.firebaseui:firebase-ui-database:1.2.0'
+    implementation 'com.facebook.fresco:fresco:1.9.0'
+    implementation 'com.github.clans:fab:1.6.4'
+    implementation 'com.gdacciaro:iosdialog:1.0.3'
+    implementation 'com.github.skydoves:powermenu:2.0.3'
+    implementation 'es.voghdev.pdfviewpager:library:1.0.3'
+    implementation 'com.gmail.samehadar:iosdialog:1.0'
+    implementation 'com.yalantis:ucrop:2.2.0-native'
+    implementation 'com.github.ReginFell:RxImagePicker:b10033d507'
+    implementation 'com.miguelcatalan:materialsearchview:1.4.0'
+
+    implementation('com.crashlytics.sdk.android:crashlytics:2.9.1@aar') {
+        transitive = true
+    }
+}
+
+apply plugin: 'com.google.gms.google-services'

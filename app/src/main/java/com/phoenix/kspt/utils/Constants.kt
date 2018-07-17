@@ -1,0 +1,45 @@
+package com.phoenix.kspt.utils
+
+/**
+ * Created by darkt on 1/4/2018.
+ */
+
+const val CONTROL_MODE: String = "control_mode"
+const val COUNT_STAGE = 8
+const val CONVERSATION = "CONVERSATION"
+const val FRAGMENT_PAIR_TYPES: String = "fragment_pair_types"
+const val FROM_ADDITIONAL_TO_INVERSION = "FROM_ADDITIONAL_TO_INVERSION"
+const val FROM_INVERSION_TO_DIRECT = "FROM_INVERSION_TO_DIRECT"
+const val FROM_DIRECT_TO_DECIMAL = "FROM_DIRECT_TO_DECIMAL"
+const val GROUP_ID = "GROUP_ID"
+const val LAUNCH_MODE: String = "launch_mode"
+const val MINUS = "MINUS"
+const val PROFESSOR_MODE: String = "professor_mode"
+const val PLUS = "PLUS"
+const val PEOPLE_LIST = "peopleList"
+const val PREPARE_MODE: String = "prepare_mode"
+const val PROFESSOR: String = "professor"
+const val STUDENT: String = "student"
+const val STUDENT_ID: String = "student_id"
+const val STUDENT_RESULT: String = "student_result"
+const val TRANSFORM = "TRANSFORM"
+const val USER = "user"
+const val USER_ID = "user_id"
+const val USER_FIRST_NAME = "first_name"
+const val USER_LAST_NAME = "second_name"
+const val USER_EMAIL = "user_email"
+const val USER_GROUP = "user_group"
+const val USER_STATUS: String = "status"
+const val USER_AVATAR: String = "avatar"
+const val IMAGE_CAMERA_REQUEST = 2
+const val INCORRECT_FORMAT: String = "incorrect_format"
+const val ERROR_RESULT: String = "error_result"
+const val FROM_SUMMATION: String = "FROM_SUMMATION"
+const val FROM_CONVERSATION: String = "FROM_CONVERSATION"
+const val OVT_THEME_1_URL = "ovtTheme1URL"
+const val OVT_THEME_2_URL = "ovtTheme2URL"
+const val OVT_THEME_3_URL = "ovtTheme3URL"
+const val OVT_THEME_4_URL = "ovtTheme4URL"
+const val AVATAR_DEFAULTS: String = "avatarDefaults"
+const val DEVELOP: String = "develop"
+const val REAL: String = "real"
